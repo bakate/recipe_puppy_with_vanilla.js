@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Recipe Fetcher</title>
+    <link rel="stylesheet" href="/base.ee376513.css">
+    <style>.search {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      button[disabled] {
+        opacity: 0.2;
+      }
+
+      .recipes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+        margin-top: 10px;
+      }
+
+      .recipe {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: var(--grey);
+        padding: 20px;
+        border-radius: 10px;
+      }</style>
+  <script src="/base.ee376513.js"></script></head>
+
+  <body>
+    <div class="wrapper">
+      <form class="search" autocomplete="">
+        <input type="text" name="query" value="beef">
+        <button name="submit" type="submit">Submit</button>
+      </form>
+      <div class="recipes"></div>
+    </div>
+
+    <script src="/recipe_puppy_with_vanilla.js.e31bb0bc.js"></script>
+  </body>
+</html>
